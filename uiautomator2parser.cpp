@@ -258,9 +258,9 @@ static std::string dump_struct_vector_as_csv(std::vector<result_struct> &v)
         outputstring.append(delim_csv);
         outputstring.append((it.package));
         outputstring.append(delim_csv);
-        /////////////////////////////
-        outputstring += (bool2int(it.content_desc));
+        outputstring.append(it.content_desc);
         outputstring.append(delim_csv);
+        /////////////////////////////
         outputstring += (bool2int(it.checkable));
         outputstring.append(delim_csv);
         outputstring += (bool2int(it.checked));
