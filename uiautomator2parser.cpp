@@ -295,8 +295,6 @@ static std::string dump_struct_vector_as_csv(std::vector<result_struct> &v)
         outputstring.append(delim_csv);
         outputstring.append(std::to_string(it.line_index));
         outputstring.append(delim_csv);
-        outputstring.append(std::to_string(it.line_index));
-        outputstring.append(delim_csv);
         outputstring.append(vector_to_string(it.children));
         outputstring.append(delim_csv);
         outputstring.append(vector_to_string(it.parents));
