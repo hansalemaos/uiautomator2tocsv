@@ -565,7 +565,7 @@ int main(int argc, char *argv[])
             rect2[1] = line_resultvec[j].aa_start_y;
             rect2[2] = line_resultvec[j].aa_end_x;
             rect2[3] = line_resultvec[j].aa_end_y;
-            if (is_rect_in_rect(rect2, rect1))
+            if (is_rect_in_rect(rect1, rect2))
             {
                 line_resultvec[i].parents.emplace_back(line_resultvec[j].line_index);
                 line_resultvec[j].children.emplace_back(line_resultvec[i].line_index);
