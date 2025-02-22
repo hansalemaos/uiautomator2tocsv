@@ -226,6 +226,7 @@ std::string static vector_to_string(std::vector<int64_t> &vec)
     {
         result += std::to_string(str) + ',';
     }
+    result.pop_back();
     result += ')';
     return result;
 }
